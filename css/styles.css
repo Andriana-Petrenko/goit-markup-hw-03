@@ -16,10 +16,13 @@ ul{
 img{
     display: block;
     max-width: 100%;
+
 }
 
 .container{
-    width: 1440px;
+    width: 1158px;
+    padding: 0 15px 0 15px;
+    margin: 0 auto;
 }
 
 .list {
@@ -37,15 +40,13 @@ img{
 
 /* Стилі Header */
 
-.page-header{
-    margin: 24px 156px;
-/* border-bottom: 1px solid #E7E9FC; */
-}
+
 
 .container-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid #E7E9FC;
 }
 
 .logo{
@@ -57,6 +58,7 @@ img{
     letter-spacing: 0.54px;
     text-transform: uppercase;
     text-decoration: none;
+    margin-right: 76px;
 }
 
 .word{
@@ -65,11 +67,12 @@ img{
 
 .container-nav{
     display: flex;
-    gap: 76px;
+    align-items: center;
 }
+
 .nav-list{
     display: flex;
-    gap: 20px;
+    gap: 40px;
 }
 
 .nav-link{
@@ -80,6 +83,7 @@ img{
     text-decoration: none;
     text-transform: capitalize;
     color: #2E2F42;
+    padding: 24px 0;
 }
 
 .nav-link:active, 
@@ -118,26 +122,26 @@ img{
 
 
 .basic{
-    width: 1440px;
-    height: 600px;
-    flex-shrink: 0;
+    padding: 188px 0;
     background-color: #2E2F42;
 }
 
 .basic-title{
-    padding: 188px 472px 48px 472px;
     color:#FFFFFF;
     text-align: center;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 1.12px;
+    max-width: 496px;
 }
 
 .basic-button{
+    display: block;
     padding: 16px 32px;
-    margin: 0 635px 0 636px;
-    border: 4px;
+    min-width: 169px;
+    height: 56px;
+    border: none;
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     background: #4D5AE5;
@@ -161,28 +165,25 @@ img{
 .container-section{
     display: flex;
     gap: 24px;
-    margin: 0 156px;
+    /* margin: 0 156px; */
     
 }
 
 .container-work{
-    display: flex;
-    width: 264px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
+    width: calc((100% - 3 * 24px) / 4);
 }
 
 .team{
     background: #F4F4FD;
 }
 
-.title {
+.title{
     color: #2E2F42;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.4px;
+    margin-bottom: 8px;
 }
 
 .item {
@@ -216,31 +217,51 @@ img{
     overflow: hidden;
 }
 
-.text{
+.container-list{
     text-align: center;
     display: flex;
     gap: 24px;
-    margin: 0 156px;
-
-
 }
 
-.fond{
-background-color: #FFFFFF;
-display: inline-flex;
-padding-bottom: 0px;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 32px;
-border-radius: 0px 0px 4px 4px;
-box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+
+.list-item{
+    background-color: #FFFFFF;
+    width: calc((100% - 3 * 24px) / 4);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
+.container-worker{
+    padding: 32px 0;
+    text-align: center;
+}
+
+.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.list-portfolio{
+    width: calc((100% - 48px) / 3);
+}
+
+.container-app{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
 /* Стилі Footer */
 
-.bottom{
-background: #2E2F42;
+.page-footer{
+    background: #2E2F42;
+    padding: 100px 0;
+}
+
+.logo-link{
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .indent{
@@ -248,6 +269,7 @@ background: #2E2F42;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.32px;
+    max-width: 264px;
 }
 
 .end{
