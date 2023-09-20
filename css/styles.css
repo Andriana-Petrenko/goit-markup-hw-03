@@ -1,4 +1,4 @@
-body {
+body{
     font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: #FFFFFF;
@@ -50,7 +50,7 @@ img {
     align-items: center;
 }
 
-.logo {
+.logo{
     font-family: "Raleway", sans-serif;
     color: #4D5AE5;
     font-size: 18px;
@@ -69,17 +69,21 @@ img {
 .container-list {
     display: flex;
     gap: 40px;
-    padding: 24px 0;
 }
 
-.nav-link {
+
+.nav-link{
+    display: block;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.32px;
-    text-decoration: none;
+    text-decoration:none;
     text-transform: capitalize;
     color: #2E2F42;
+    padding: 24px 0;
+
+    
 }
 
 .nav-link:active,
@@ -92,7 +96,6 @@ img {
 .container-adrs {
     display: flex;
     gap: 40px;
-    padding: 24px 0;
 }
 
 .info {
@@ -100,11 +103,13 @@ img {
 }
 
 .adrs-link {
+    display: block;
     color: #434455;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.32px;
     text-decoration: none;
+    padding: 24px 0;
 }
 
 .adrs-link:hover,
@@ -255,6 +260,7 @@ width: calc((100% - 72px) / 4);
 .logo-link{
     display: inline-block;
     margin-bottom: 16px;
+    margin-right: 0;
 }
 .text {
     color: #F4F4FD;
